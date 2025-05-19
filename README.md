@@ -1,6 +1,6 @@
 # 🚗 Tesla Proximity Alert System
 
-A Python-based automation tool to **alert your phone when your Tesla is within 5 minutes driving distance** of your chosen location (like your home), using the Tesla API, OpenRouteService, and SMS via Email-to-SMS gateway.
+A Python-based automation tool to **alert your phone when your Tesla is within a set minutes driving distance** of your chosen location (like your home), using the Tesla API, OpenRouteService, and SMS via Email-to-SMS gateway.
 
 ---
 
@@ -8,7 +8,7 @@ A Python-based automation tool to **alert your phone when your Tesla is within 5
 
 - Fetches your Tesla’s live GPS location using Tesla’s unofficial API.
 - Calculates driving ETA from your car to your chosen destination using OpenRouteService.
-- Sends you an SMS alert if your car is within 5 minutes of arrival.
+- Sends you an SMS alert if your car is within x minutes of arrival.
 - Fully automated—run on a schedule with a loop or via `cron`.
 
 ---
