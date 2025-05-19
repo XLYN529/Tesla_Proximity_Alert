@@ -1,0 +1,10 @@
+
+
+
+teslapy
+requests
+python-dotenv
+
+# (Optional, if you plan to use FastAPI in the future:)
+# fastapi
+# uvicorn
