@@ -119,6 +119,10 @@ To run every minute, add this to your crontab (`crontab -e`):
   DEST_LAT = 40.5000  # Replace with your latitude
   DEST_LON = -74.4500 # Replace with your longitude
   ```
+- **Set your desired time radius** in `app/main.py`:
+ ```python
+  if eta <= x: # Replace x with your desired minutes
+  ```
 
 - **Change check interval:**  
   - Edit the `time.sleep()` value or your cron schedule as desired.
