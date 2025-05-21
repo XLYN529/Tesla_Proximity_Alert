@@ -47,7 +47,7 @@ tesla-proximity-alert/
 ### 1. **Clone the Repo**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/tesla-proximity-alert.git
+git clone https://github.com/XLYN529/tesla-proximity-alert.git
 cd tesla-proximity-alert
 ```
 
@@ -69,11 +69,11 @@ pip install -r requirements.txt
 Create a `.env` file in your project root with the following contents:
 
 ```ini
-SENDER_EMAIL=yourgmail@gmail.com
-SENDER_PASSWORD=your_gmail_app_password
-RECIPIENT=1234567890@vtext.com  # Your phone's carrier email gateway address
+SENDER_EMAIL=yourgmail@gmail.com # Your Gmail to send SMS from
+SENDER_PASSWORD=your_gmail_app_password # create an app password using your Gmail or click on the link below
+RECIPIENT=1234567890@vtext.com  # Your phone's carrier email gateway address, refer to the list below for U.S. Carriers
 TESLA_EMAIL=your_tesla_email
-ORS_API_KEY=your_openrouteservice_api_key
+ORS_API_KEY=your_openrouteservice_api_key  # create an account at https://api.openrouteservice.org/, and paste the API key here. (Its free for upto 2000 requests per day)
 ```
 - **Tip:** Use a Gmail [App Password](https://support.google.com/accounts/answer/185833?hl=en) for `SENDER_PASSWORD`.
 - For U.S. carriers:  
@@ -131,16 +131,9 @@ To run every minute, add this to your crontab (`crontab -e`):
 
 ## ❗ **Notes and Limitations**
 
-- Only works if your Tesla is online (not asleep). Script will attempt to wake it if needed.
+- Only works if your Tesla is online (not asleep). The script will attempt to wake it if needed.
 - Email-to-SMS gateways depend on your carrier and may have limits/delays.
 - All secrets should be in `.env` and **never committed to git**.
-- For production use, consider adding error handling and logging.
-
----
-
-## 📜 **License**
-
-MIT License (or add your own license here).
 
 ---
 
@@ -150,6 +143,3 @@ MIT License (or add your own license here).
 - [OpenRouteService](https://openrouteservice.org/)
 - Python
 
----
-
-Feel free to customize or expand as you add features!
